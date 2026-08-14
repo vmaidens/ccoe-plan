@@ -1,0 +1,223 @@
+---
+marp: true
+theme: default
+paginate: true
+style: |
+  section {
+    font-size: 0.9em;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+  section h1 {
+    color: #003d7a !important;
+    font-weight: 700;
+  }
+  section h2 {
+    color: #003d7a !important;
+  }
+  section ul {
+    background-color: #ffffff;
+  }
+  section li {
+    background-color: #ffffff;
+  }
+  table {
+    font-size: 0.85em;
+  }
+---
+
+# Building a Cloud Center of Excellence
+
+## From Scratch — Azure, AWS & Bare Metal
+
+**Vince Maidens** · August 2026
+
+<!--
+Opening slide — set the tone. This is a strategic plan, not a technical deep-dive.
+The audience is leadership — focus on outcomes, not tooling.
+-->
+
+---
+
+## Core Principles
+
+- **Enable, don't block** — self-service by default, guardrails not gates
+- **Measure everything** — FinOps, security posture, adoption velocity
+- **Start small, scale fast** — pilot, prove, then expand
+- **Hybrid-aware** — bare metal is first-class, not legacy
+
+<!--
+These principles guide every decision. The CCoE is an enabler,
+not a police force. This is critical for buy-in.
+-->
+
+---
+
+## Team Structure (~5-6 FTEs)
+
+| Role | Count | Focus |
+|------|-------|-------|
+| CCoE Lead | 1 | Strategy, executive reporting |
+| Cloud Architect | 1-2 | Azure/AWS standards, design reviews |
+| FinOps Analyst | 1 | Cost visibility, optimisation |
+| Security Lead | 1 | NCSC CSP, IAM, policy |
+| Platform Engineer | 1-2 | Landing zones, IaC, automation |
+| Developer Advocate | 1 | Training, docs, evangelism |
+
+<!--
+Lean team. Some roles can be part-time initially.
+The CCoE Lead (Vince) sets strategy; the team executes.
+-->
+
+---
+
+## 24-Week Roadmap
+
+| Phase | Weeks | Focus |
+|-------|-------|-------|
+| **0 — Foundation** | 1-4 | See everything, win fast |
+| **1 — Guardrails** | 5-10 | Safe self-service |
+| **2 — Enablement** | 11-16 | Accelerate adoption |
+| **3 — Optimisation** | 17-24 | Continuous improvement |
+
+<!--
+The roadmap is the heart of the plan.
+Each phase builds on the last, with quick wins in Phase 0.
+-->
+
+---
+
+## Phase 0: Quick Wins (First 30 Days)
+
+1. **Tag compliance report + auto-tag policy** — visibility in 1 day
+2. **Rightsize idle VMs** — immediate cost savings in 2 days
+3. **Enable Azure Policy baseline** — NCSC CSP aligned in 1 day
+4. **Publish Cloud Playbook** — how to deploy a web app
+5. **Set up cost alerts** — subscription-level governance
+6. **Bare metal risk register** — top 10 highest-risk servers
+
+<!--
+These are the credibility builders. Deliver them fast,
+publicise the wins, and use them to secure ongoing investment.
+Quick Win #2 (idle VMs) often pays for the CCoE team in month 1.
+-->
+
+---
+
+## Phase 1: Guardrails (Weeks 5-10)
+
+**Azure Landing Zone**
+- Management group hierarchy aligned to business units
+- Separate subscriptions for cost isolation and blast radius
+- Azure Blueprints for repeatable deployment
+
+**Security**
+- PIM + Conditional Access baseline (massive win, zero dev friction)
+- Managed Identities replacing service accounts
+- NCSC CSP aligned Azure Policy initiatives
+
+**Bare Metal Governance**
+- Asset registry, patch SLAs, decommission process
+- Integrate monitoring with central Log Analytics
+
+<!--
+The landing zone is the technical foundation.
+PIM + Conditional Access is the single biggest security improvement
+with zero developer friction — do this early and publicise it.
+-->
+
+---
+
+## Phase 2: Enablement (Weeks 11-16)
+
+**IaC Standards**
+- Bicep (Azure), Terraform (AWS), Ansible (bare metal)
+- Template library: pre-approved patterns for common workloads
+- PR reviews for all infrastructure changes
+
+**Self-Service Catalogue**
+- "Deploy a web app" (App Service + SQL + WAF)
+- "Deploy containers" (AKS + ACR + App Gateway)
+- "Dev/test environment" (sandbox subscription)
+- "Connect on-premises" (ExpressRoute + private endpoints)
+
+**Training**
+- "Cloud 101" workshop — hands-on, free sandbox
+- Certification targets: AZ-900 (80% staff), AZ-104 (50%), AZ-305 (architects)
+
+<!--
+Make the right thing the easy thing.
+If teams can deploy a web app in 5 minutes via the catalogue,
+they'll use it instead of building from scratch.
+-->
+
+---
+
+## Phase 3: Optimisation (Weeks 17-24)
+
+**FinOps**
+- Cost allocation tags enforced across all subscriptions
+- Reserved instances / savings plans (1-year and 3-year)
+- Auto-shutdown for dev/test environments
+- Cost-per-workload dashboard per business unit
+
+**Security Hardening**
+- Zero Trust architecture
+- Defender for Cloud on all subscriptions
+- Key Vault migration — eliminate hardcoded secrets
+- Automated compliance reporting (NCSC CSP)
+
+**Bare Metal Modernisation**
+- Waves: stabilise → automate → assess → migrate
+
+<!--
+By month 6, the CCoE shifts from building to optimising.
+FinOps should show measurable savings by month 4.
+Bare metal modernisation is a 9-12 month journey — start the assessment now.
+-->
+
+---
+
+## Key KPIs
+
+| Category | Metric | Month 6 | Month 12 |
+|----------|--------|---------|----------|
+| **Cost** | Reserved instance coverage | 40% | 70% |
+| **Security** | Resources compliant with Policy | 80% | 95% |
+| **Security** | Privileged access via PIM | 100% | 100% |
+| **Adoption** | New deployments via IaC | 50% | 90% |
+| **Adoption** | Staff certified (AZ-900+) | 30% | 80% |
+| **Bare Metal** | Servers with monitoring | 50% | 100% |
+
+<!--
+Measure what matters. These KPIs show executive progress
+and keep the CCoE accountable. Review monthly with leadership.
+-->
+
+---
+
+## Immediate Next Steps (This Week)
+
+1. **Secure executive sponsor** — confirm C-level champion (CIO/CTO)
+2. **Draft CCoE charter** — scope, authority, KPIs, team structure
+3. **Run Azure resource graph** — produce estate summary
+4. **Schedule CCoE kickoff** — with all potential team members
+5. **Identify bare metal inventory owner** — who knows what's on-premises?
+6. **Set up cost alerts** — Azure Cost Management on all subscriptions
+
+<!--
+Actionable, not theoretical. These 6 steps can be started immediately.
+The charter and executive sponsor are the critical path — everything else
+follows from having authority and visibility.
+-->
+
+---
+
+## Questions?
+
+**vmaidens@capita.com**
+
+<!--
+End slide. Keep it simple.
+-->
