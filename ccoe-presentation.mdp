@@ -58,7 +58,7 @@ not a police force. This is critical for buy-in.
 
 | Role | Count | Focus |
 |------|-------|-------|
-| CCoE Lead | 1 | Strategy, executive reporting |
+| CCoE Leads | 2 | Strategy, executive reporting (Vince Maidens, Peter Main) |
 | Cloud Architect | 1-2 | Azure/AWS standards, design reviews |
 | FinOps Analyst | 1 | Cost visibility, optimisation |
 | Security Lead | 1 | NCSC CSP, IAM, policy |
@@ -199,7 +199,7 @@ and keep the CCoE accountable. Review monthly with leadership.
 
 ## Immediate Next Steps (This Week)
 
-1. **Secure executive sponsor** — confirm C-level champion (CIO/CTO)
+1. ✅ **Executive sponsorship secured** — Ciaran Barr (CIO)
 2. **Draft CCoE charter** — scope, authority, KPIs, team structure
 3. **Run Azure resource graph** — produce estate summary
 4. **Schedule CCoE kickoff** — with all potential team members
@@ -208,8 +208,8 @@ and keep the CCoE accountable. Review monthly with leadership.
 
 <!--
 Actionable, not theoretical. These 6 steps can be started immediately.
-The charter and executive sponsor are the critical path — everything else
-follows from having authority and visibility.
+The charter is the critical path now — everything else follows from
+having authority and visibility.
 -->
 
 ---
