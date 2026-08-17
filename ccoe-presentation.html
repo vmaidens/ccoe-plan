@@ -146,50 +146,15 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="what-i-need-from-the-cio--five-explicit-asks">What I Need From the CIO — Five Explicit Asks</h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Ask</th>
-<th>Why</th>
-<th>Needed by</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><strong>Investment approval</strong> — 4 hires + 0.4 FTE managers</td>
-<td>Permanent reqs can't open without it</td>
-<td>Week 1</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong>Mandate email</strong> — read-only access across internal/shared estate</td>
-<td>Without it, baseline slips (Risk R1)</td>
-<td>Before Wk 1</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong>Commercial + account-CTO engagement</strong> — classify estate, agree CAF essential function boundary</td>
-<td>Scanning client subs may breach contract</td>
-<td>Week 1</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong>CFO delegated authority</strong> — commitment spend threshold in writing</td>
-<td>Commitments are 1–3 year balance-sheet items</td>
-<td>Week 4</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong>Deputies' time formally allocated</strong> — Alan &amp; Peter at ~20%</td>
-<td>Verbal = Risk R4 (2nd most likely stall)</td>
-<td>Week 1</td>
-</tr>
-</tbody>
-</table>
-<p><em>Security &amp; Compliance Lead: dotted line to Group CISO (not solely into cloud delivery — ISO27001 A.5.3 separation of duties).</em></p>
+<h1 id="why-this-plan-is-different">Why This Plan Is Different</h1>
+<p>The CCoE isn't a policing function. It's a <strong>service and governance layer</strong> that helps teams ship faster while staying compliant.</p>
+<p>We're building three things:</p>
+<ol>
+<li><strong>Cost visibility</strong> — so we know what we're spending and why</li>
+<li><strong>Security guardrails</strong> — so teams can't accidentally break compliance</li>
+<li><strong>Delivery intake</strong> — so requests don't get lost in email chains</li>
+</ol>
+<p>The guiding principle is simple: <strong>reversible before irreversible</strong>. We fix the easy wins first (auto-shutdown, tagging, orphaned resources) before committing to any long-term contracts.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-theme="default" data-style="section {
   font-size: 0.9em !important;
@@ -258,29 +223,51 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="first-30-days--land-and-win">First 30 Days — &quot;Land and Win&quot;</h2>
-<p><strong>Sequencing: reversible before irreversible.</strong> Rightsizing, scheduling, Hybrid Benefit, waste removal in Weeks 1–4; commitment purchases no earlier than Week 8.</p>
-<p><strong>Week 1 — Access, Scope, Baseline</strong></p>
-<ul>
-<li>Estate classification with Commercial (internal / client-contracted / shared-service)</li>
-<li>Three access tracks opened: RBAC Reader, EA/MCA Billing Reader, RI/SP purchase auth</li>
-<li>AWS Cost Explorer enabled + cost allocation tags activated (Day 1)</li>
-<li><strong>Data residency — Deny from Day 1:</strong> Allowed Locations (uksouth, ukwest) at root MG</li>
-<li>Security baseline: MCSB + UK OFFICIAL/UK NHS in Defender for Cloud (assessment mode)</li>
-<li>AWS SCP restricting to <code>eu-west-2</code></li>
-</ul>
-<p><strong>Week 2 — Guardrails, Methodology, Intake</strong></p>
-<ul>
-<li>Savings methodology signed by Finance <em>before</em> first £ published</li>
-<li>Cost Management anomaly detection + budget alerts (80/100 actual, 100% forecast)</li>
-<li>UK Log Analytics workspace with contractual retention + immutable archive</li>
-<li>Intake v1 live on Forms + Power Automate + SharePoint (IS-signed)</li>
-</ul>
-<p><strong>Week 3 — Reversible Wins</strong></p>
-<ul>
-<li>Non-prod auto-shutdown, AHB gaps, orphaned resources, Log Analytics tuning</li>
-<li>Rightsizing gated on P95 CPU + business-hours profile (not mean)</li>
-</ul>
+<h1 id="what-i-need-from-you-ciaran">What I Need From You, Ciaran</h1>
+<p>Five decisions. Not assumptions. Each one unblocks a specific risk.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Decision</th>
+<th>Why It Matters</th>
+<th>Timeline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Investment approval</strong> — budget for 4 hires + 0.4 FTE from two managers</td>
+<td>We can't open requisitions without it</td>
+<td>Week 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Mandate email</strong> — CCoE gets read-only access across internal/shared estate</td>
+<td>Without it, the Week 1 baseline slips (our biggest risk)</td>
+<td>Before Week 1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Commercial + account-CTO engagement</strong> — classify the estate</td>
+<td>We can't scan client-contracted subscriptions without contractual clearance</td>
+<td>Week 1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>CFO delegated authority</strong> — approval threshold for commitment spend</td>
+<td>Commitments are 1-3 year balance-sheet items; this can't be ad-hoc</td>
+<td>Week 4</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Deputies' time formally allocated</strong> — Alan &amp; Peter at ~20%</td>
+<td>Verbal agreements don't survive day-job pressure</td>
+<td>Week 1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>One structural note:</strong> the Security &amp; Compliance Lead will report on a dotted line to the Group CISO, not just into cloud delivery. This is intentional — it's an ISO27001 requirement that the person assuring security isn't the same function delivering it.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-theme="default" data-style="section {
   font-size: 0.9em !important;
@@ -349,92 +336,37 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="90-day-milestone-table">90-Day Milestone Table</h2>
-<table>
-<thead>
-<tr>
-<th>Week</th>
-<th>Milestone</th>
-<th>Deliverable</th>
-<th>Owner</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Estate scope classified</td>
-<td>Cleared-scope subscription list</td>
-<td>Vince + Commercial</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Residency Deny live</td>
-<td>Allowed-locations at root MG</td>
-<td>Vince</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Savings methodology signed</td>
-<td>Finance-agreed definitions</td>
-<td>Andrew + Finance</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Logging + evidence pipeline</td>
-<td>LA workspace, continuous export</td>
-<td>Vince</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Intake v1 live (IS-signed)</td>
-<td>3 requests processed</td>
-<td>Alan, Peter</td>
-</tr>
-<tr>
-<td>4</td>
-<td>First exec report</td>
-<td>1-pager</td>
-<td>Vince</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Reversible savings realised</td>
-<td>Finance-confirmed run-rate delta</td>
-<td>Andrew</td>
-</tr>
-<tr>
-<td>8</td>
-<td>CAF self-assessment</td>
-<td>Outcome ratings + improvement plan</td>
-<td>Security Lead</td>
-</tr>
-<tr>
-<td>8</td>
-<td>First commitment purchase</td>
-<td>1yr Compute Savings Plan</td>
-<td>Andrew</td>
-</tr>
-<tr>
-<td>12</td>
-<td>Phase 0 → Phase 1 transition</td>
-<td>Guardrails operational</td>
-<td>Vince</td>
-</tr>
-<tr>
-<td>12</td>
-<td>90-day exec report</td>
-<td>Full report</td>
-<td>Vince</td>
-</tr>
-<tr>
-<td>~20</td>
-<td>Cloud Architect + Security Lead start</td>
-<td>Roles filled</td>
-<td>Vince</td>
-</tr>
-</tbody>
-</table>
-<p><em>Start dates are ~16 weeks from req open, not 6.</em></p>
+<h1 id="first-30-days-land-and-win">First 30 Days: &quot;Land and Win&quot;</h1>
+<p><strong>Week 1 — Access, Scope, and Baseline</strong></p>
+<p>We start by understanding what we have and getting permission to look at it.</p>
+<ul>
+<li><strong>Estate classification</strong> with Commercial: which subscriptions are internal, which are client-contracted, which are shared service? Nothing touches a client subscription until we have that answer.</li>
+<li><strong>Three access tracks</strong> opened in parallel (they have different approvers):
+<ul>
+<li>Azure RBAC Reader + Cost Management Reader at root MG</li>
+<li>EA/MCA Billing Account Reader (this one's critical — without it we see no invoices or reservation data)</li>
+<li>RI/SP purchase authorisation</li>
+</ul>
+</li>
+<li><strong>Data residency enforcement</strong> — Deny policy for non-UK regions, live from Day 1</li>
+<li><strong>Security baseline</strong> — MCSB + UK OFFICIAL/UK NHS standards enabled in Defender for Cloud (assessment mode only, not blocking yet)</li>
+<li><strong>AWS Day-1</strong> — Cost Explorer enabled, cost allocation tags activated, CUR export configured</li>
+</ul>
+<p><strong>Week 2 — Guardrails and Methodology</strong></p>
+<ul>
+<li><strong>Savings methodology signed by Finance</strong> before we publish a single number. We define four separate categories: realised (verified), avoided (growth suppressed), pipeline (unvalidated), and forecast.</li>
+<li><strong>Cost anomaly detection</strong> — catches the runaway spend that budget alerts structurally miss</li>
+<li><strong>Logging architecture</strong> — UK-region Log Analytics workspace with contractual retention and immutable archive</li>
+<li><strong>Intake process v1</strong> — Forms + Power Automate + SharePoint, signed off by Information Security</li>
+</ul>
+<p><strong>Week 3 — Reversible Wins</strong></p>
+<p>Now we start saving money without locking anything in:</p>
+<ul>
+<li>Non-production auto-shutdown schedules</li>
+<li>Azure Hybrid Benefit coverage gaps</li>
+<li>Orphaned resource cleanup</li>
+<li>Log Analytics retention tuning</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-theme="default" data-style="section {
   font-size: 0.9em !important;
@@ -503,87 +435,49 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="quick-wins--evidence-backed">Quick Wins — Evidence-Backed</h2>
-<p>Every row carries an evidence artefact — auditor-ready (ISO27001 cl. 9.1).</p>
+<h1 id="90-day-milestones">90-Day Milestones</h1>
 <table>
 <thead>
 <tr>
-<th>Owner</th>
-<th>Quick Win</th>
-<th>Target</th>
-<th>Evidence Artefact</th>
+<th>Week</th>
+<th>What We're Delivering</th>
+<th>Who Owns It</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Andrew</td>
-<td>Commitment inventory</td>
-<td>100% RIs/SPs catalogued</td>
-<td>Commitment register, dated</td>
+<td>1</td>
+<td>Estate scope classified, access tracks opened, residency Deny live</td>
+<td>Vince + Commercial</td>
 </tr>
 <tr>
-<td>Andrew</td>
-<td>Cost baseline (Actual + Amortised)</td>
-<td>Cleared-scope covered</td>
-<td>Cost query export, dated</td>
+<td>2</td>
+<td>Savings methodology signed, logging pipeline live, intake v1</td>
+<td>Andrew + Finance + Alan + Peter</td>
 </tr>
 <tr>
-<td>Andrew</td>
-<td>Tag inheritance enabled</td>
-<td>Allocation coverage delta</td>
-<td>Before/after allocation %</td>
+<td>4</td>
+<td>First executive report with realised savings, provider assurance status</td>
+<td>Vince</td>
 </tr>
 <tr>
-<td>Andrew</td>
-<td>Anomaly detection live</td>
-<td>Both clouds alerting</td>
-<td>Alert rule config export</td>
+<td>8</td>
+<td>CAF self-assessment, first commitment purchase (if rightsizing complete)</td>
+<td>Security Lead + Andrew</td>
 </tr>
 <tr>
-<td>Andrew</td>
-<td><strong>Reversible savings realised</strong></td>
-<td><strong>£ confirmed by Finance</strong></td>
-<td>Finance-signed run-rate delta</td>
+<td>12</td>
+<td>Phase 0 → Phase 1 transition (guardrails operational)</td>
+<td>Vince</td>
 </tr>
 <tr>
-<td>Security</td>
-<td>Allowed-locations Deny live</td>
-<td>100% cleared scope</td>
-<td>Assignment ID, scope, date</td>
-</tr>
-<tr>
-<td>Security</td>
-<td>MCSB + UK OFFICIAL/UK NHS</td>
-<td>Defender dashboard populated</td>
-<td>Assignment ID + compliance</td>
-</tr>
-<tr>
-<td>Security</td>
-<td>High-severity findings closed</td>
-<td>n closed / n accepted w/ expiry</td>
-<td>Compliance export before/after</td>
-</tr>
-<tr>
-<td>Compliance</td>
-<td>CAF essential function boundary</td>
-<td>Written, signed by Commercial</td>
-<td>Scope statement, dated</td>
-</tr>
-<tr>
-<td>Compliance</td>
-<td>Provider assurance (CSP)</td>
-<td>14 principles assessed</td>
-<td>Assessment doc with sources</td>
-</tr>
-<tr>
-<td>Bare Metal</td>
-<td>Inventory + risk register, ISMS-bound</td>
-<td>Asset baseline defined</td>
-<td>Register with owners, mappings</td>
+<td>~20</td>
+<td>Cloud Architect + Security Lead in seat</td>
+<td>Vince</td>
 </tr>
 </tbody>
 </table>
-<p><strong>&quot;Savings identified&quot; renamed &quot;savings pipeline (unvalidated)&quot; everywhere.</strong> The Board hears &quot;£2m identified&quot; and asks where it went every month.</p>
+<p><strong>Important context on hiring:</strong> start dates are ~16 weeks from requisition open, not 6. Between reserved-headcount approval, resourcing, market, offer and three-month notice periods, that's the realistic timeline. We've removed hiring from being a hard phase gate — the plan proceeds even if roles slip.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-theme="default" data-style="section {
   font-size: 0.9em !important;
@@ -652,15 +546,87 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="compliance-architecture--ncsc-caf">Compliance Architecture — NCSC CAF</h2>
-<p><strong>CAF is outcome-based, not control-based.</strong> 4 objectives, 14 principles, ~39 contributing outcomes — assessed Achieved / Partially Achieved / Not Achieved. <strong>No percentage. Any &quot;% CAF compliant&quot; is a category error.</strong></p>
-<p><strong>Three artefacts, deliberately separate:</strong></p>
-<ul>
-<li><strong>(a) CAF outcome assessment</strong> — essential function scoped first, then current-state assessment. Owned by Security &amp; Compliance Lead, dotted line to CISO. First assessment: Weeks 4–8 (self-assessed).</li>
-<li><strong>(b) Provider assurance (CSP)</strong> — per-principle assessment against Microsoft/AWS published responses. Under CAF: <em>the evidence for A4 (supply chain).</em> Document review, refreshed annually.</li>
-<li><strong>(c) Tenant configuration posture</strong> — MCSB control-domain scores from Defender. Under CAF: <em>evidence contributing to specific outcomes</em> (B2, B3, B4, C1) — never a CAF rating itself.</li>
-</ul>
-<p><strong>Where we will be weakest — and it won't be the technology:</strong> A1 (governance), A4 (supply chain), B6 (staff awareness), and <strong>D1 (response/recovery — requires a <em>tested</em> plan, not a documented one).</strong> The Defender score will look fine long before the assessment does.</p>
+<h1 id="quick-wins--evidence-backed">Quick Wins — Evidence-Backed</h1>
+<p>Every quick win carries an evidence artefact. An auditor needs to see: measurement method, source, frequency, responsible person, and a retained record (ISO27001 cl. 9.1).</p>
+<table>
+<thead>
+<tr>
+<th>Owner</th>
+<th>Quick Win</th>
+<th>Target</th>
+<th>Evidence Artefact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Andrew</td>
+<td>Commitment inventory</td>
+<td>100% of RIs/SPs catalogued</td>
+<td>Commitment register, dated</td>
+</tr>
+<tr>
+<td>Andrew</td>
+<td>Cost baseline (Actual + Amortised)</td>
+<td>Cleared-scope subscriptions covered</td>
+<td>Cost query export, dated</td>
+</tr>
+<tr>
+<td>Andrew</td>
+<td>Tag inheritance enabled</td>
+<td>Allocation coverage delta measured</td>
+<td>Before/after allocation %</td>
+</tr>
+<tr>
+<td>Andrew</td>
+<td>Anomaly detection live</td>
+<td>Both clouds alerting to <code>#ccoe-alerts</code></td>
+<td>Alert rule config export</td>
+</tr>
+<tr>
+<td>Andrew</td>
+<td><strong>Reversible savings realised</strong></td>
+<td><strong>£ confirmed by Finance</strong></td>
+<td>Finance-signed run-rate delta</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Allowed-locations Deny live</td>
+<td>100% cleared scope, UK-only</td>
+<td>Assignment ID, scope, date</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>MCSB + UK OFFICIAL/UK NHS</td>
+<td>Defender dashboard populated</td>
+<td>Assignment ID + compliance export</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>High-severity findings closed</td>
+<td>n closed / n accepted with expiry</td>
+<td>Compliance export before/after</td>
+</tr>
+<tr>
+<td>Compliance</td>
+<td>CAF essential function boundary</td>
+<td>Written, signed by Commercial</td>
+<td>Scope statement, dated</td>
+</tr>
+<tr>
+<td>Compliance</td>
+<td>Provider assurance (CSP)</td>
+<td>14 principles assessed</td>
+<td>Assessment doc with sources</td>
+</tr>
+<tr>
+<td>Bare Metal</td>
+<td>Inventory + risk register, ISMS-bound</td>
+<td>Asset baseline defined</td>
+<td>Register with owners, mappings</td>
+</tr>
+</tbody>
+</table>
+<p><strong>One naming change:</strong> we've renamed &quot;savings identified&quot; to <strong>&quot;savings pipeline (unvalidated)&quot;</strong> everywhere. The Board hears &quot;£2m identified&quot; once and asks where it went every month for a year. Being precise protects our credibility.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-theme="default" data-style="section {
   font-size: 0.9em !important;
@@ -729,76 +695,22 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="operating-model">Operating Model</h2>
-<p><strong>Weekly Rhythm</strong></p>
-<table>
-<thead>
-<tr>
-<th>Day</th>
-<th>Meeting</th>
-<th>Attendees</th>
-<th>Duration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Mon</td>
-<td>CCoE Standup</td>
-<td>Vince, Andrew, Alan, Peter</td>
-<td>15 min</td>
-</tr>
-<tr>
-<td>Tue</td>
-<td>Cost Review</td>
-<td>Andrew leads; Vince attends</td>
-<td>30 min</td>
-</tr>
-<tr>
-<td>Wed</td>
-<td>Architecture Review</td>
-<td>Alan leads; requesting team</td>
-<td>45 min</td>
-</tr>
-<tr>
-<td>Thu</td>
-<td>Developer Office Hours</td>
-<td>Peter (open drop-in)</td>
-<td>60 min</td>
-</tr>
-<tr>
-<td>Fri</td>
-<td>Planning &amp; Reflection</td>
-<td>Vince + core team</td>
-<td>30 min</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Decision Framework</strong></p>
-<ul>
-<li>CCoE decides: platform guardrails, cross-sub architecture patterns, FinOps commitments</li>
-<li>Workload teams decide: application architecture within guardrails, sizing within budget</li>
-<li>Exceptions: time-boxed with mandatory expiry (enforced by Policy Exemptions), reviewed every Friday</li>
-<li>Escalation: workload → review → 5 days → Vince → 5 more days → CIO</li>
-</ul>
-<p><strong>Phase Transition Triggers</strong></p>
-<table>
-<thead>
-<tr>
-<th>Phase</th>
-<th>Triggers</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Advisory → Defined</td>
-<td>≥95% high-severity MCSB compliance (fixed denom, sustained 4 wks); 4 consecutive weekly rhythms held; spend-allocation improved; Commercial-signed impact assessment for any Deny</td>
-</tr>
-<tr>
-<td>Defined → Mandatory</td>
-<td>Ring-based Deny rollout complete (zero unplanned incidents, 4 wks); intake ≥20 requests within SLA; Security Lead in seat <em>or</em> accountable deputy agreed</td>
-</tr>
-</tbody>
-</table>
+<h1 id="compliance-architecture--ncsc-caf">Compliance Architecture — NCSC CAF</h1>
+<p><strong>CAF is outcome-based, not control-based.</strong> It has 4 objectives, 14 principles, and around 39 contributing outcomes. Each is assessed as <strong>Achieved / Partially Achieved / Not Achieved</strong>. There is no percentage. Any &quot;% CAF compliant&quot; figure is a category error — don't let one enter a report.</p>
+<p><strong>CAF is scoped to an essential function, not to a platform.</strong> Azure, AWS and bare metal all fall inside one assessment boundary. A gap in bare metal caps the rating for the whole function regardless of how good the cloud estate looks.</p>
+<p><strong>Three artefacts, deliberately separate:</strong></p>
+<ol>
+<li>
+<p><strong>CAF outcome assessment (a)</strong> — essential function scoped first, then current-state assessment. Owned by Security &amp; Compliance Lead, dotted line to CISO. First assessment: Weeks 4-8, self-assessed and explicitly labelled as such.</p>
+</li>
+<li>
+<p><strong>Provider assurance (CSP) (b)</strong> — per-principle assessment against Microsoft's and AWS's published responses. Under CAF, this is <strong>the evidence for A4 (supply chain)</strong>. Document review, refreshed annually.</p>
+</li>
+<li>
+<p><strong>Tenant configuration posture (c)</strong> — MCSB control-domain scores from Defender. Under CAF, this is <strong>evidence contributing to specific outcomes</strong> (B2 identity, B3 data security, B4 system security, C1 security monitoring) — never a CAF rating itself.</p>
+</li>
+</ol>
+<p><strong>Where we'll be weakest — and it won't be the technology.</strong> The outcomes most likely to come back Partially Achieved are A1 (governance), A4 (supply chain), B6 (staff awareness), and <strong>D1 (response and recovery — requires a <em>tested</em> plan, not a documented one)</strong>. The Defender score will look healthy long before the assessment does.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-theme="default" data-style="section {
   font-size: 0.9em !important;
@@ -867,76 +779,58 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="top-risks">Top Risks</h2>
+<h1 id="how-we-work--operating-model">How We Work — Operating Model</h1>
+<p><strong>Weekly rhythm</strong> keeps us aligned without status theatre:</p>
 <table>
 <thead>
 <tr>
-<th>#</th>
-<th>Risk</th>
-<th>L</th>
-<th>I</th>
-<th>Mitigation</th>
+<th>Day</th>
+<th>Meeting</th>
+<th>Attendees</th>
+<th>Duration</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>R1</td>
-<td>Access requests stall</td>
-<td>High</td>
-<td>High</td>
-<td>CIO mandate email before Week 1</td>
+<td>Monday</td>
+<td>CCoE Standup</td>
+<td>Vince, Andrew, Alan, Peter</td>
+<td>15 min</td>
 </tr>
 <tr>
-<td>R3</td>
-<td>Scanning client sub breaches contract</td>
-<td>Medium</td>
-<td><strong>Critical</strong></td>
-<td>Estate classified Week 1 Mon; cleared-scope list is operating boundary</td>
+<td>Tuesday</td>
+<td>Cost Review</td>
+<td>Andrew leads; Vince attends</td>
+<td>30 min</td>
 </tr>
 <tr>
-<td>R4</td>
-<td>Deputies pulled to day jobs</td>
-<td>High</td>
-<td>Medium</td>
-<td>Written time allocation from line managers</td>
+<td>Wednesday</td>
+<td>Architecture Review</td>
+<td>Alan leads; requesting team</td>
+<td>45 min</td>
 </tr>
 <tr>
-<td>R5</td>
-<td>Commitment against churned workload</td>
-<td>Medium</td>
-<td>High</td>
-<td>First purchase Week 8+; 1yr SP sized to P25; exclude &lt;24mo contracts</td>
+<td>Thursday</td>
+<td>Developer Office Hours</td>
+<td>Peter (open drop-in)</td>
+<td>60 min</td>
 </tr>
 <tr>
-<td>R9</td>
-<td>Billing-scope access blocks cost story</td>
-<td>Medium</td>
-<td><strong>High</strong></td>
-<td>Escalate to CFO/Finance directly</td>
-</tr>
-<tr>
-<td>R15</td>
-<td>Deny breaks client deployment</td>
-<td>Low</td>
-<td><strong>Critical</strong></td>
-<td>Commercial-signed impact assessment; ring-based rollout</td>
-</tr>
-<tr>
-<td>R17</td>
-<td>CAF fails on organisational grounds</td>
-<td><strong>High</strong></td>
-<td>High</td>
-<td>Non-tech outcomes assigned owners outside CCoE at Week 4</td>
-</tr>
-<tr>
-<td>R18</td>
-<td>&quot;% CAF compliant&quot; enters a report</td>
-<td>Medium</td>
-<td>High</td>
-<td>CAF has no percentage — no field for one in report template</td>
+<td>Friday</td>
+<td>Planning &amp; Reflection</td>
+<td>Vince + core team</td>
+<td>30 min</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Decision framework:</strong></p>
+<ul>
+<li>CCoE decides: platform guardrails, cross-subscription architecture patterns, FinOps commitments</li>
+<li>Workload teams decide: application architecture within guardrails, sizing within budget, deployment timing</li>
+<li>Escalation: workload team → weekly review → unresolved in 5 business days → Vince → unresolved in 5 more → Ciaran</li>
+<li>Exceptions: time-boxed with mandatory expiry, reviewed every Friday. No silent renewals.</li>
+</ul>
+<p><strong>Security incidents</strong> route to a defined incident process with named notification SLAs — ICO 72 hours, plus contractual client notification windows which are frequently 24 hours. An ad-hoc note to the CIO is not an incident process.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-theme="default" data-style="section {
   font-size: 0.9em !important;
@@ -1005,30 +899,21 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="executive-report--structure">Executive Report — Structure</h2>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>CCoE Executive Report — [Month]
-Prepared for: Ciaran Barr (CIO) | Security section cc: Group CISO
-
-METHODOLOGY NOTE (standing)
-All cost figures amortised. AWS at [rate], source [x].
-Savings in four separate lines, never combined:
-  - Realised: verified against invoice (Finance-confirmed)
-  - Avoided: growth suppressed (NON-CASHABLE)
-  - Pipeline (unvalidated): modelled, not actioned
-  - Forecast: projected from current run rate
-
-1. Headline (3 bullets max)
-2. Estate Summary (cleared scope)
-3. FinOps (realised / avoided / pipeline / forecast)
-4. Security &amp; Compliance
-   - NCSC CAF outcomes: Achieved / PA / NA (SELF-ASSESSED)
-   - Tenant posture (MCSB): evidence toward CAF B2/B3/B4/C1
-   - Provider assurance (CSP): evidence for CAF A4
-5. Bare Metal
-6. Intake / Delivery
-7. Next Period Priorities (3 bullets)
-</code></pre>
-<p><strong>Key principle: CAF outcomes are Achieved / Partially Achieved / Not Achieved — never a percentage.</strong></p>
+<h1 id="phase-transition-triggers">Phase Transition Triggers</h1>
+<p>We don't move from Advisory to Defined Guardrails (Phase 0 → Phase 1) based on gut feel. Four conditions must all be met:</p>
+<ol>
+<li><strong>≥95% compliance on high-severity MCSB controls</strong> over a fixed denominator of in-scope production resources, sustained for 4 weeks</li>
+<li><strong>4 consecutive weeks</strong> of the weekly rhythm held without cancellation</li>
+<li><strong>Spend-allocation coverage</strong> improved by an agreed margin off a published baseline</li>
+<li><strong>Commercial-signed impact assessment</strong> in place for any Deny policy beyond residency</li>
+</ol>
+<p>Moving from Defined to Mandatory (Phase 1 → Phase 2) requires:</p>
+<ol>
+<li><strong>Ring-based Deny rollout complete</strong> (sandbox → dev → one prod sub → all) with zero unplanned incidents, sustained 4 weeks</li>
+<li><strong>Intake has processed ≥20 requests</strong> within the Charter's tiered-gate SLA</li>
+<li><strong>Security &amp; Compliance Lead in seat</strong> <em>or</em> an accountable named deputy agreed with the CISO</li>
+</ol>
+<p><strong>Safety note:</strong> Deny safety doesn't come from Audit data (which only shows what already exists). It comes from ring-based rollout, CI policy evaluation pre-merge, Activity Log monitoring, a named break-glass owner, and documented emergency-bypass paths.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-theme="default" data-style="section {
   font-size: 0.9em !important;
@@ -1097,15 +982,350 @@ section table td {
   font-size: 0.65em !important;
 }
 ;">
-<h2 id="summary">Summary</h2>
+<h1 id="top-risks--and-how-were-managing-them">Top Risks — And How We're Managing Them</h1>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Likelihood</th>
+<th>Impact</th>
+<th>Our Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access requests stall, blocking baseline</td>
+<td>High</td>
+<td>High</td>
+<td>CIO mandate email before Week 1; three separate access tracks with named approvers</td>
+</tr>
+<tr>
+<td>Scanning client sub breaches contract</td>
+<td>Medium</td>
+<td>Critical</td>
+<td>Estate classified Week 1 Monday; cleared-scope list is the operating boundary for every task</td>
+</tr>
+<tr>
+<td>Deputies pulled to day jobs</td>
+<td>High</td>
+<td>Medium</td>
+<td>Written time allocation from line managers, not verbal agreement</td>
+</tr>
+<tr>
+<td>Commitment against churned workload</td>
+<td>Medium</td>
+<td>High</td>
+<td>First purchase Week 8+; 1-year SP sized to P25 of hourly baseline; exclude workloads with &lt;24 months remaining</td>
+</tr>
+<tr>
+<td>Billing-scope access blocks cost story</td>
+<td>Medium</td>
+<td>High</td>
+<td>Escalate to CFO/Finance directly if track (b) unresolved by end of Week 1</td>
+</tr>
+<tr>
+<td>Deny breaks client deployment</td>
+<td>Low</td>
+<td>Critical</td>
+<td>Commercial-signed impact assessment before any Deny beyond residency; ring-based rollout</td>
+</tr>
+<tr>
+<td>CAF fails on organisational grounds</td>
+<td>High</td>
+<td>High</td>
+<td>Non-technical outcomes assigned owners outside CCoE at Week 4</td>
+</tr>
+<tr>
+<td>&quot;% CAF compliant&quot; enters a report</td>
+<td>Medium</td>
+<td>High</td>
+<td>CAF has no percentage — our report template has no field for one</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-theme="default" data-style="section {
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+}
+section h1 {
+  font-size: 2.2em !important;
+  line-height: 1.2 !important;
+}
+section h2 {
+  font-size: 1.6em !important;
+  line-height: 1.3 !important;
+}
+section h3 {
+  font-size: 1.3em !important;
+  line-height: 1.4 !important;
+}
+section ul, section ol {
+  font-size: 0.85em !important;
+  margin-top: 0.5em !important;
+}
+section li {
+  margin-bottom: 0.3em !important;
+}
+section table {
+  font-size: 0.7em !important;
+  width: 100% !important;
+}
+section table th {
+  font-size: 0.75em !important;
+}
+section table td {
+  font-size: 0.65em !important;
+}
+" lang="en-US" style="--theme:default;--style:section {
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+}
+section h1 {
+  font-size: 2.2em !important;
+  line-height: 1.2 !important;
+}
+section h2 {
+  font-size: 1.6em !important;
+  line-height: 1.3 !important;
+}
+section h3 {
+  font-size: 1.3em !important;
+  line-height: 1.4 !important;
+}
+section ul, section ol {
+  font-size: 0.85em !important;
+  margin-top: 0.5em !important;
+}
+section li {
+  margin-bottom: 0.3em !important;
+}
+section table {
+  font-size: 0.7em !important;
+  width: 100% !important;
+}
+section table th {
+  font-size: 0.75em !important;
+}
+section table td {
+  font-size: 0.65em !important;
+}
+;">
+<h1 id="executive-report--what-it-looks-like">Executive Report — What It Looks Like</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>CCoE Executive Report — [Month]
+Prepared for: Ciaran Barr (CIO) | Security section cc: Group CISO
+
+METHODOLOGY NOTE (standing)
+All cost figures amortised. AWS converted at [rate], source [x].
+Savings reported in four separate lines, never combined:
+  - Realised: verified against invoice (Finance-confirmed)
+  - Avoided: growth suppressed (NON-CASHABLE)
+  - Pipeline (unvalidated): modelled, not actioned
+  - Forecast: projected from current run rate
+
+1. Headline (3 bullets max)
+   - What shipped
+   - Realised £ / posture movement / risks closed
+   - Any decision needed from the CIO
+
+2. Estate Summary (cleared scope)
+   - Subscriptions/accounts: Azure [n], AWS [n], bare-metal sites [n]
+   - Monthly spend (amortised): Azure £[x], AWS £[x], bare metal £[x]
+   - Spend allocated to cost centre: [x]% (baseline [y]%)
+   - MCSB posture: [x]% | Residency exceptions: [n]
+
+3. FinOps
+   - Realised this period: £[x]
+   - Avoided this period: £[x]
+   - Pipeline (unvalidated): £[x]
+   - Commitment coverage: [x]%
+
+4. Security &amp; Compliance
+   - NCSC CAF outcomes: Achieved [n] | Partially Achieved [n] | Not Achieved [n]
+   - Tenant posture (MCSB): [x]% (evidence toward CAF B2/B3/B4/C1)
+   - Provider assurance (CSP): [n]/14 assessed
+   - High-severity findings: [n] closed | [n] accepted with expiry
+
+5. Bare Metal
+   - Assets in ISMS scope: [n] | Risks treated: [n]
+
+6. Intake / Delivery
+   - Requests processed: [n] | Median approval time: [x] vs SLA [y]
+
+7. Next Period Priorities (3 bullets)
+</code></pre>
+<p><strong>Key principle:</strong> CAF outcomes are Achieved / Partially Achieved / Not Achieved. Never a percentage.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-theme="default" data-style="section {
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+}
+section h1 {
+  font-size: 2.2em !important;
+  line-height: 1.2 !important;
+}
+section h2 {
+  font-size: 1.6em !important;
+  line-height: 1.3 !important;
+}
+section h3 {
+  font-size: 1.3em !important;
+  line-height: 1.4 !important;
+}
+section ul, section ol {
+  font-size: 0.85em !important;
+  margin-top: 0.5em !important;
+}
+section li {
+  margin-bottom: 0.3em !important;
+}
+section table {
+  font-size: 0.7em !important;
+  width: 100% !important;
+}
+section table th {
+  font-size: 0.75em !important;
+}
+section table td {
+  font-size: 0.65em !important;
+}
+" lang="en-US" style="--theme:default;--style:section {
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+}
+section h1 {
+  font-size: 2.2em !important;
+  line-height: 1.2 !important;
+}
+section h2 {
+  font-size: 1.6em !important;
+  line-height: 1.3 !important;
+}
+section h3 {
+  font-size: 1.3em !important;
+  line-height: 1.4 !important;
+}
+section ul, section ol {
+  font-size: 0.85em !important;
+  margin-top: 0.5em !important;
+}
+section li {
+  margin-bottom: 0.3em !important;
+}
+section table {
+  font-size: 0.7em !important;
+  width: 100% !important;
+}
+section table th {
+  font-size: 0.75em !important;
+}
+section table td {
+  font-size: 0.65em !important;
+}
+;">
+<h1 id="summary--the-story-in-three-acts">Summary — The Story in Three Acts</h1>
+<p><strong>Act 1: Land (Weeks 1-4)</strong></p>
 <ul>
-<li><strong>Week 1:</strong> Five CIO asks, estate classification, access tracks, residency Deny</li>
-<li><strong>Week 4:</strong> First exec report with realised savings, provider assurance, bare-metal risk</li>
-<li><strong>Week 8:</strong> CAF self-assessment, first commitment purchase, ServiceNow cutover (Scenario A)</li>
-<li><strong>Week 12:</strong> Phase 0 → Phase 1 transition, 90-day full report</li>
-<li><strong>Week ~20:</strong> Cloud Architect + Security Lead in seat</li>
+<li>Five CIO asks confirmed</li>
+<li>Estate classified, access granted, residency Deny live</li>
+<li>First executive report with realised savings</li>
 </ul>
-<p><strong>Principle: reversible before irreversible. Advisory before Mandatory. Evidence before percentage.</strong></p>
+<p><strong>Act 2: Win (Weeks 5-12)</strong></p>
+<ul>
+<li>CAF self-assessment complete</li>
+<li>First commitment purchase (if rightsizing confirms savings)</li>
+<li>Phase 0 → Phase 1 transition</li>
+</ul>
+<p><strong>Act 3: Scale (Weeks 13-20+)</strong></p>
+<ul>
+<li>Phase 1 → Phase 2 (mandatory guardrails)</li>
+<li>Cloud Architect + Security Lead in seat</li>
+<li>Full operating model running</li>
+</ul>
+<p><strong>The principles that guide us:</strong></p>
+<ul>
+<li>Reversible before irreversible</li>
+<li>Advisory before mandatory</li>
+<li>Evidence before percentage</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-theme="default" data-style="section {
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+}
+section h1 {
+  font-size: 2.2em !important;
+  line-height: 1.2 !important;
+}
+section h2 {
+  font-size: 1.6em !important;
+  line-height: 1.3 !important;
+}
+section h3 {
+  font-size: 1.3em !important;
+  line-height: 1.4 !important;
+}
+section ul, section ol {
+  font-size: 0.85em !important;
+  margin-top: 0.5em !important;
+}
+section li {
+  margin-bottom: 0.3em !important;
+}
+section table {
+  font-size: 0.7em !important;
+  width: 100% !important;
+}
+section table th {
+  font-size: 0.75em !important;
+}
+section table td {
+  font-size: 0.65em !important;
+}
+" lang="en-US" style="--theme:default;--style:section {
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+}
+section h1 {
+  font-size: 2.2em !important;
+  line-height: 1.2 !important;
+}
+section h2 {
+  font-size: 1.6em !important;
+  line-height: 1.3 !important;
+}
+section h3 {
+  font-size: 1.3em !important;
+  line-height: 1.4 !important;
+}
+section ul, section ol {
+  font-size: 0.85em !important;
+  margin-top: 0.5em !important;
+}
+section li {
+  margin-bottom: 0.3em !important;
+}
+section table {
+  font-size: 0.7em !important;
+  width: 100% !important;
+}
+section table th {
+  font-size: 0.75em !important;
+}
+section table td {
+  font-size: 0.65em !important;
+}
+;">
+<h1 id="questions">Questions?</h1>
+<p><strong>Contact:</strong> Vince Maidens, Azure Cloud Director<br />
+<strong>Email:</strong> <a href="mailto:vince.maidens@capita.com">vince.maidens@capita.com</a><br />
+<strong>Teams:</strong> @Vince Maidens</p>
+<p><strong>Next steps:</strong></p>
+<ol>
+<li>CIO confirms five asks (Week 1)</li>
+<li>Estate classification with Commercial (Week 1)</li>
+<li>First executive report (Week 4)</li>
+</ol>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o),l=Symbol();let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[l];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();a()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[l]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
 </script></foreignObject></svg></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@4.5.0/lib/bespoke.js.LICENSE.txt */
