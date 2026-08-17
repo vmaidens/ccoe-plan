@@ -69,7 +69,7 @@ Five decisions. Not assumptions. Each one unblocks a specific risk.
 | 2 | **Mandate email** — CCoE gets read-only access across internal/shared estate | Without it, the Week 1 baseline slips (our biggest risk) | Before Week 1 |
 | 3 | **Commercial + account-CTO engagement** — classify the estate | We can't scan client-contracted subscriptions without contractual clearance | Week 1 |
 | 4 | **CFO delegated authority** — approval threshold for commitment spend | Commitments are 1-3 year balance-sheet items; this can't be ad-hoc | Week 4 |
-| 5 | **Deputies' time formally allocated** — Alan & Peter at ~20% | Verbal agreements don't survive day-job pressure | Week 1 |
+| 5 | **Deputies' time formally allocated** — George Alan (Hosting & Hybrid Cloud Director) & Peter Main (Director AWS Services) at ~20% | Verbal agreements don't survive day-job pressure | Week 1 |
 
 **One structural note:** the Security & Compliance Lead will report on a dotted line to the Group CISO, not just into cloud delivery. This is intentional — it's an ISO27001 requirement that the person assuring security isn't the same function delivering it.
 
@@ -112,9 +112,9 @@ Now we start saving money without locking anything in:
 | Week | What We're Delivering | Who Owns It |
 |---|---|---|
 | 1 | Estate scope classified, access tracks opened, residency Deny live | Vince + Commercial |
-| 2 | Savings methodology signed, logging pipeline live, intake v1 | Andrew + Finance + Alan + Peter |
+| 2 | Savings methodology signed, logging pipeline live, intake v1 | Adam + Finance + George Alan + Peter Main |
 | 4 | First executive report with realised savings, provider assurance status | Vince |
-| 8 | CAF self-assessment, first commitment purchase (if rightsizing complete) | Security Lead + Andrew |
+| 8 | CAF self-assessment, first commitment purchase (if rightsizing complete) | Security Lead + Adam |
 | 12 | Phase 0 → Phase 1 transition (guardrails operational) | Vince |
 | ~20 | Cloud Architect + Security Lead in seat | Vince |
 
@@ -128,11 +128,11 @@ Every quick win carries an evidence artefact. An auditor needs to see: measureme
 
 | Owner | Quick Win | Target | Evidence Artefact |
 |---|---|---|---|
-| Andrew | Commitment inventory | 100% of RIs/SPs catalogued | Commitment register, dated |
-| Andrew | Cost baseline (Actual + Amortised) | Cleared-scope subscriptions covered | Cost query export, dated |
-| Andrew | Tag inheritance enabled | Allocation coverage delta measured | Before/after allocation % |
-| Andrew | Anomaly detection live | Both clouds alerting to `#ccoe-alerts` | Alert rule config export |
-| Andrew | **Reversible savings realised** | **£ confirmed by Finance** | Finance-signed run-rate delta |
+| Adam | Commitment inventory | 100% of RIs/SPs catalogued | Commitment register, dated |
+| Adam | Cost baseline (Actual + Amortised) | Cleared-scope subscriptions covered | Cost query export, dated |
+| Adam | Tag inheritance enabled | Allocation coverage delta measured | Before/after allocation % |
+| Adam | Anomaly detection live | Both clouds alerting to `#ccoe-alerts` | Alert rule config export |
+| Adam | **Reversible savings realised** | **£ confirmed by Finance** | Finance-signed run-rate delta |
 | Security | Allowed-locations Deny live | 100% cleared scope, UK-only | Assignment ID, scope, date |
 | Security | MCSB + UK OFFICIAL/UK NHS | Defender dashboard populated | Assignment ID + compliance export |
 | Security | High-severity findings closed | n closed / n accepted with expiry | Compliance export before/after |
@@ -168,10 +168,10 @@ Every quick win carries an evidence artefact. An auditor needs to see: measureme
 
 | Day | Meeting | Attendees | Duration |
 |---|---|---|---|
-| Monday | CCoE Standup | Vince, Andrew, Alan, Peter | 15 min |
-| Tuesday | Cost Review | Andrew leads; Vince attends | 30 min |
-| Wednesday | Architecture Review | Alan leads; requesting team | 45 min |
-| Thursday | Developer Office Hours | Peter (open drop-in) | 60 min |
+| Monday | CCoE Standup | Vince, Adam, George Alan, Peter Main | 15 min |
+| Tuesday | Cost Review | Adam leads; Vince attends | 30 min |
+| Wednesday | Architecture Review | George Alan leads; requesting team | 45 min |
+| Thursday | Developer Office Hours | Peter Main (open drop-in) | 60 min |
 | Friday | Planning & Reflection | Vince + core team | 30 min |
 
 **Decision framework:**
