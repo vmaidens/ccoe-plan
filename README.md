@@ -7,6 +7,8 @@ Cloud Center of Excellence (CCoE) — plan, delivery action plan, and build asse
 | File | What it is | Status |
 |------|------------|--------|
 | [CCoE Charter & Execution Plan.md](CCoE%20Charter%20&%20Execution%20Plan.md) | Charter, governance, decision rights, 24-week roadmap | Sign-off ready |
+| [CCoE Execution Plan.md](CCoE%20Execution%20Plan.md) | **Sub-24-week execution artefact (v2.1):** CIO asks, 30-day "Land and Win", 90-day sprint plan, operating model, risk register. Approval artefact — no shell commands. | **Ready for executive review** |
+| [CCoE Execution Plan — Technical Annex.md](CCoE%20Execution%20Plan%20%E2%80%94%20Technical%20Annex.md) | Companion command reference for the Execution Plan (`az`/CLI). Not for executive circulation. | Working reference |
 | [CCoE Build Plan.md](CCoE%20Build%20Plan.md) | Phase-by-phase build plan with quick wins | Approved in principle |
 | [CCoE Delivery Action Plan.md](CCoE%20Delivery%20Action%20Plan.md) | Operational action plan: phases, owners, exit criteria, KPIs | **Current working doc** |
 | [CCoE_Steering_Deck.md](CCoE_Steering_Deck.md) / [.html](CCoE_Steering_Deck.html) | Steering committee deck (marp) — status + asks | For next steering meeting |
